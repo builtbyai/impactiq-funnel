@@ -1,0 +1,12 @@
+name = "impactiq-funnel"
+compatibility_date = "2024-01-01"
+
+# Cloudflare Pages configuration
+pages_build_output_dir = "dist"
+
+[env.production]
+name = "impactiq-funnel-production"
+route = "impactiqbeta.com/*"
+
+[env.preview]
+name = "impactiq-funnel-preview"

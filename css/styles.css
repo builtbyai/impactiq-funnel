@@ -399,6 +399,8 @@ body {
     padding: var(--space-3xl) 0;
     opacity: 1 !important;
     transform: none !important;
+    position: relative;
+    overflow: hidden;
 }
 
 .demo-video-section .section-header {
@@ -507,10 +509,121 @@ body {
     font-size: 0.875rem;
 }
 
+/* Feature Showcase Section */
+.feature-showcase-section {
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 50%, #0f0f0f 100%);
+    padding: var(--space-3xl) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-showcase-section .section-title {
+    color: white;
+}
+
+.feature-showcase-section .section-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+}
+
+@media (max-width: 1024px) {
+    .showcase-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .showcase-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.showcase-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(251, 191, 36, 0.2);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+}
+
+.showcase-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(251, 191, 36, 0.5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+                0 0 30px rgba(251, 191, 36, 0.15);
+}
+
+.showcase-image {
+    height: 320px;
+    padding: var(--space-lg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(20, 20, 30, 0.6) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.showcase-image::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(251, 191, 36, 0.1) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.showcase-image img {
+    max-width: 100%;
+    height: 100%;
+    max-height: 280px;
+    object-fit: contain;
+    border-radius: var(--radius-lg);
+    position: relative;
+    z-index: 1;
+}
+
+/* Remove white background from analytics image */
+.showcase-card:nth-child(3) .showcase-image img {
+    mix-blend-mode: lighten;
+}
+
+.showcase-content {
+    padding: var(--space-lg);
+    text-align: center;
+}
+
+.showcase-content h3 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--accent-orange);
+    margin-bottom: var(--space-sm);
+}
+
+.showcase-content p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
 /* App Preview Section */
 .app-preview-section {
     background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
     padding: var(--space-3xl) 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .app-preview-section .section-title {
@@ -676,6 +789,13 @@ body {
 /* Sections */
 section {
     padding: var(--space-3xl) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+section > .container {
+    position: relative;
+    z-index: 1;
 }
 
 .section-header {
@@ -786,6 +906,8 @@ section {
 /* Benefits Section */
 .benefits-section {
     background: white;
+    position: relative;
+    overflow: hidden;
 }
 
 .benefits-grid {
@@ -993,6 +1115,8 @@ section {
     background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
     color: white;
     padding: var(--space-3xl) 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .cta-content {
