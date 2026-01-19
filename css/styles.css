@@ -135,10 +135,21 @@ body {
 }
 
 .brand-text {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-orange) 100%);
+    background: linear-gradient(90deg, var(--primary-blue), var(--accent-orange), var(--primary-blue), var(--accent-orange));
+    background-size: 300% 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: gradientShiftBrand 3s linear infinite;
+}
+
+@keyframes gradientShiftBrand {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 .nav-menu {

@@ -5,6 +5,7 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/features/',
   root: '.',
   publicDir: 'assets',
   resolve: {
@@ -22,7 +23,8 @@ export default defineConfig({
     open: true,
   },
   build: {
-    outDir: 'dist',
+    outDir: 'dist/features',
+    copyPublicDir: true,
     sourcemap: false,
     rollupOptions: {
       output: {
