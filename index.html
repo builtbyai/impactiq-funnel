@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ImpactIQ - AI-Powered Roofing Platform. Detect storm damage, automate insurance claims, and manage roofing projects with cutting-edge technology.">
+    <meta name="keywords" content="roofing app, roof inspection, storm damage, insurance claims, AI roof detection, ImpactIQ">
+    <title>ImpactIQ | AI-Powered Roofing Platform</title>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <img src="assets/impactiq-logo.png" alt="ImpactIQ Logo" class="nav-logo" onerror="this.style.display='none'">
+                <span class="brand-text">ImpactIQ</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#get-started" class="nav-link nav-link-cta">Get Started</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Logo Intro Video -->
+    <section class="hero">
+        <div class="video-container">
+            <div class="logo-intro-video" id="logoIntro">
+                <!-- Placeholder for logo intro video -->
+                <div class="logo-animation">
+                    <img src="assets/impactiq-logo-animated.gif" alt="ImpactIQ Logo Animation" class="animated-logo" onerror="this.parentElement.innerHTML='<div class=\'logo-fallback\'><i class=\'fas fa-home\'></i><span>ImpactIQ</span></div>'">
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Transform Roofing Claims Into</span>
+                        <span class="title-highlight">Instant Approvals</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        The future of roofing is here. ImpactIQ uses AI to detect storm damage, automate insurance claims, and close more roofing projects faster.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#get-started" class="btn btn-primary btn-lg">
+                            Start Free Trial
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#features" class="btn btn-secondary btn-lg">
+                            See How It Works
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">Claim Approval Rate</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">48hrs</span>
+                            <span class="stat-label">Average Claim Time</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$12k</span>
+                            <span class="stat-label">Avg. Project Value</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animated background elements -->
+        <div class="hero-bg">
+            <div class="bg-orb orb-1"></div>
+            <div class="bg-orb orb-2"></div>
+            <div class="bg-orb orb-3"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Roofing Features</h2>
+                <p class="section-subtitle">Everything you need to close more deals</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1: AI Damage Detection -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="feature-title">AI Damage Detection</h3>
+                    <p class="feature-description">
+                        Advanced AI analyzes roof photos to instantly identify hail damage, wind damage, and storm impacts with 99% accuracy.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Instant damage analysis</li>
+                        <li><i class="fas fa-check"></i> Photo documentation</li>
+                        <li><i class="fas fa-check"></i> AI-powered reports</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Insurance Claim Automation -->
+                <div class="feature-card featured">
+                    <div class="feature-badge">Most Popular</div>
+                    <div class="feature-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="feature-title">Claim Automation</h3>
+                    <p class="feature-description">
+                        Automatically generate insurance claims with detailed reports, photos, and damage assessments ready for adjuster review.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> One-click claim generation</li>
+                        <li><i class="fas fa-check"></i> Adjuster-ready reports</li>
+                        <li><i class="fas fa-check"></i> Supplement tracking</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Digital Inspections -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="feature-title">Digital Inspections</h3>
+                    <p class="feature-description">
+                        Conduct professional roof inspections with our mobile app. Capture measurements, photos, and notes in minutes.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Mobile inspection app</li>
+                        <li><i class="fas fa-check"></i> Roof measurements</li>
+                        <li><i class="fas fa-check"></i> Before/after photos</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 4: Storm Tracking -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud-showers-heavy"></i>
+                    </div>
+                    <h3 class="feature-title">Storm Tracking</h3>
+                    <p class="feature-description">
+                        Get real-time storm alerts and hail maps. Know exactly when and where storms hit to target your canvassing efforts.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Real-time storm alerts</li>
+                        <li><i class="fas fa-check"></i> Hail size mapping</li>
+                        <li><i class="fas fa-check"></i> Territory targeting</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 5: Homeowner Portal -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3 class="feature-title">Homeowner Portal</h3>
+                    <p class="feature-description">
+                        Branded customer portal where homeowners track their project status, view photos, and sign contracts digitally.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Project tracking</li>
+                        <li><i class="fas fa-check"></i> Digital signatures</li>
+                        <li><i class="fas fa-check"></i> Payment processing</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 6: CRM & Pipeline -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Sales Pipeline CRM</h3>
+                    <p class="feature-description">
+                        Manage leads, track progress, and close more deals with our roofing-specific CRM built for storm restoration.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Lead management</li>
+                        <li><i class="fas fa-check"></i> Pipeline tracking</li>
+                        <li><i class="fas fa-check"></i> Team performance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Roofing Contractors Choose ImpactIQ</h2>
+                <p class="section-subtitle">Real results for your roofing business</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">01</div>
+                    <h3>Close More Deals Faster</h3>
+                    <p>Professional AI-generated reports build instant trust with homeowners and insurance adjusters, increasing close rates by 40%.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-number">02</div>
+                    <h3>Reduce Claim Denials</h3>
+                    <p>AI-powered damage detection ensures you never miss hail hits, reducing claim denials and increasing supplement approvals.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-number">03</div>
+                    <h3>Scale Your Operations</h3>
+                    <p>Manage more projects with less overhead. Our automation tools let you handle 3x more jobs with the same team size.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-number">04</div>
+                    <h3>Get Paid Faster</h3>
+                    <p>Integrated payment processing and digital contracts reduce payment cycles from 45 days to 15 days on average.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How ImpactIQ Works</h2>
+                <p class="section-subtitle">From inspection to payment in 4 simple steps</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Inspect & Document</h3>
+                    <p>Use our mobile app to photograph roof damage. AI instantly analyzes and identifies all impacts.</p>
+                </div>
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Generate Report</h3>
+                    <p>AI creates a professional inspection report with damage maps, photos, and measurements in seconds.</p>
+                </div>
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Submit Claim</h3>
+                    <p>Send the report to insurance, get homeowner signatures, and track claim status in real-time.</p>
+                </div>
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Close & Get Paid</h3>
+                    <p>Complete the project, collect payment through the platform, and start your next job.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trusted By Leading Roofing Contractors</h2>
+            </div>
+
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "ImpactIQ doubled our close rate. The AI damage reports are so professional that adjusters approve claims without even scheduling inspections."
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>Mike Rodriguez</strong>
+                        <span>Storm Restoration Pro</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "We went from managing 5 projects a month to 20 projects without hiring more staff. The automation is a game-changer for our business."
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>Sarah Chen</strong>
+                        <span>Elite Roofing Systems</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The storm tracking feature helps us get to affected areas before our competition. We've increased our lead volume by 3x."
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>James Wilson</strong>
+                        <span>Apex Exteriors</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="get-started" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Start Closing More Roofing Deals Today</h2>
+                <p class="cta-subtitle">Join hundreds of contractors using ImpactIQ to grow their roofing business. Start your 14-day free trial - no credit card required.</p>
+
+                <form class="signup-form" id="signupForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="firstName" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="lastName" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" name="email" placeholder="Work Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-input" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="company" placeholder="Company Name" required>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-input" name="projectsPerMonth" required>
+                            <option value="">Projects Per Month</option>
+                            <option value="1-5">1-5 Projects</option>
+                            <option value="6-15">6-15 Projects</option>
+                            <option value="16-30">16-30 Projects</option>
+                            <option value="30+">30+ Projects</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">
+                        Start Free 14-Day Trial
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>No credit card required</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Full access to all features</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Cancel anytime</span>
+                    </div>
+                </div>
+
+                <div class="cta-note">
+                    <i class="fas fa-lock"></i>
+                    <span>Your information is secure. We never share your data.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/impactiq-logo.png" alt="ImpactIQ" class="footer-logo" onerror="this.style.display='none'">
+                    <span class="brand-text">ImpactIQ</span>
+                    <p>AI-Powered Roofing Platform</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#benefits">Benefits</a>
+                        <a href="#how-it-works">How It Works</a>
+                        <a href="#pricing">Pricing</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="#blog">Blog</a>
+                        <a href="#case-studies">Case Studies</a>
+                        <a href="#help">Help Center</a>
+                        <a href="#api">API Docs</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#about">About Us</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#careers">Careers</a>
+                        <a href="#partners">Partners</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                        <a href="#security">Security</a>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ImpactIQ. All rights reserved. | AI-Powered Roofing Platform</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
