@@ -105,11 +105,41 @@
                 <h2 class="section-title">See ImpactIQ In Action</h2>
                 <p class="section-subtitle">Watch how our platform transforms your workflow</p>
             </div>
-            <div class="demo-video-wrapper">
-                <video autoplay muted loop playsinline class="demo-video">
-                    <source src="assets/demo-video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+
+            <!-- First Video - Video Left, Text Right -->
+            <div class="demo-video-row">
+                <div class="demo-video-wrapper">
+                    <video autoplay muted loop playsinline class="demo-video">
+                        <source src="assets/demo-video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="demo-video-content">
+                    <h3 class="demo-video-title">Platform Overview</h3>
+                    <p class="demo-video-description">Experience the power of ImpactIQ's intuitive interface. Our platform streamlines every aspect of your roofing business from initial inspection to final payment.</p>
+                    <ul class="demo-video-features">
+                        <li><i class="fas fa-check"></i> Intuitive dashboard</li>
+                        <li><i class="fas fa-check"></i> Real-time analytics</li>
+                        <li><i class="fas fa-check"></i> Team collaboration</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Second Video - Text Left, Video Right -->
+            <div class="demo-video-row reverse">
+                <div class="demo-video-wrapper">
+                    <video autoplay muted loop playsinline class="demo-video">
+                        <source src="assets/hail-finder-demo.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="demo-video-content">
+                    <h3 class="demo-video-title">Hail Finder & Auto Reports</h3>
+                    <p class="demo-video-description">Our AI-powered hail detection automatically identifies storm damage and generates comprehensive reports ready for insurance submission.</p>
+                    <ul class="demo-video-features">
+                        <li><i class="fas fa-check"></i> AI damage detection</li>
+                        <li><i class="fas fa-check"></i> Auto-generated reports</li>
+                        <li><i class="fas fa-check"></i> Insurance-ready docs</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -342,8 +372,13 @@
 
             <div class="testimonials">
                 <div class="testimonial">
-                    <div class="quote-icon">
-                        <i class="fas fa-quote-left"></i>
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?img=12" alt="Mike Rodriguez">
+                        </div>
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
                     </div>
                     <p class="testimonial-text">
                         "ImpactIQ doubled our close rate. The AI damage reports are so professional that adjusters approve claims without even scheduling inspections."
@@ -354,8 +389,13 @@
                     </div>
                 </div>
                 <div class="testimonial">
-                    <div class="quote-icon">
-                        <i class="fas fa-quote-left"></i>
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?img=32" alt="Sarah Chen">
+                        </div>
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
                     </div>
                     <p class="testimonial-text">
                         "We went from managing 5 projects a month to 20 projects without hiring more staff. The automation is a game-changer for our business."
@@ -366,8 +406,13 @@
                     </div>
                 </div>
                 <div class="testimonial">
-                    <div class="quote-icon">
-                        <i class="fas fa-quote-left"></i>
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?img=53" alt="James Wilson">
+                        </div>
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
                     </div>
                     <p class="testimonial-text">
                         "The storm tracking feature helps us get to affected areas before our competition. We've increased our lead volume by 3x."
@@ -447,54 +492,30 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="assets/impactiq-logo-full.png" alt="ImpactIQ" class="footer-logo" onerror="this.style.display='none'">
+            <div class="footer-top">
+                <div class="footer-brand-center">
+                    <img src="assets/impactiq-logo-full.png" alt="ImpactIQ" class="footer-logo">
                     <span class="brand-text">IMPACTIQ</span>
                     <p>AI-Powered Roofing Platform</p>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Product</h4>
-                        <a href="#features">Features</a>
-                        <a href="#benefits">Benefits</a>
-                        <a href="#how-it-works">How It Works</a>
-                        <a href="#pricing">Pricing</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Resources</h4>
-                        <a href="#blog">Blog</a>
-                        <a href="#case-studies">Case Studies</a>
-                        <a href="#help">Help Center</a>
-                        <a href="#api">API Docs</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Company</h4>
-                        <a href="#about">About Us</a>
-                        <a href="#contact">Contact</a>
-                        <a href="#careers">Careers</a>
-                        <a href="#partners">Partners</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Legal</h4>
-                        <a href="#privacy">Privacy Policy</a>
-                        <a href="#terms">Terms of Service</a>
-                        <a href="#security">Security</a>
-                    </div>
-                </div>
-                <div class="footer-social">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
+            </div>
+            <div class="footer-links-center">
+                <a href="#features">Features</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#get-started">Get Started</a>
+                <a href="#privacy">Privacy</a>
+                <a href="#terms">Terms</a>
+            </div>
+            <div class="footer-social-center">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 ImpactIQ. All rights reserved. | AI-Powered Roofing Platform</p>
+                <p>&copy; 2026 IMPACTIQ. All rights reserved.</p>
             </div>
         </div>
     </footer>

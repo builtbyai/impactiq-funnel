@@ -416,9 +416,38 @@ body {
     opacity: 1 !important;
 }
 
+/* Demo Video Row Layout */
+.demo-video-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+    margin-bottom: var(--space-3xl);
+}
+
+.demo-video-row:last-child {
+    margin-bottom: 0;
+}
+
+.demo-video-row.reverse {
+    direction: rtl;
+}
+
+.demo-video-row.reverse > * {
+    direction: ltr;
+}
+
+@media (max-width: 900px) {
+    .demo-video-row {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+    .demo-video-row.reverse {
+        direction: ltr;
+    }
+}
+
 .demo-video-wrapper {
-    max-width: 900px;
-    margin: 0 auto;
     border-radius: var(--radius-xl);
     overflow: hidden;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5),
@@ -437,6 +466,45 @@ body {
 
 .demo-video:focus {
     outline: none;
+}
+
+.demo-video-content {
+    padding: var(--space-lg);
+}
+
+.demo-video-title {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: var(--space-md);
+}
+
+.demo-video-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: var(--space-lg);
+}
+
+.demo-video-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.demo-video-features li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--space-sm);
+    font-size: 1rem;
+}
+
+.demo-video-features i {
+    color: var(--accent-orange);
+    font-size: 0.875rem;
 }
 
 /* App Preview Section */
@@ -721,14 +789,33 @@ section {
 }
 
 .benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: var(--space-2xl);
+}
+
+.benefit-card {
+    flex: 0 1 300px;
+    max-width: 350px;
 }
 
 .benefit-card {
     text-align: center;
     padding: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.benefit-card h3 {
+    text-align: center;
+}
+
+.benefit-card p {
+    text-align: center;
+    max-width: 300px;
 }
 
 .benefit-number {
@@ -845,13 +932,36 @@ section {
     padding: var(--space-2xl);
     border-radius: var(--radius-xl);
     position: relative;
+    text-align: center;
+}
+
+.testimonial-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--space-lg);
+}
+
+.testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--accent-orange);
+    margin-bottom: var(--space-md);
+    box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+}
+
+.testimonial-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .quote-icon {
-    color: var(--primary-blue);
-    font-size: 2.5rem;
-    opacity: 0.15;
-    margin-bottom: var(--space-md);
+    color: var(--accent-orange);
+    font-size: 1.5rem;
+    opacity: 0.5;
 }
 
 .testimonial-text {
@@ -981,28 +1091,29 @@ select.form-input {
     font-size: 0.875rem;
 }
 
-/* Footer */
+/* Footer - Centered Layout */
 .footer {
     background: var(--gray-900);
     color: rgba(255, 255, 255, 0.8);
     padding: var(--space-3xl) 0 var(--space-xl);
 }
 
-.footer-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    gap: var(--space-2xl);
+.footer-top {
+    text-align: center;
     margin-bottom: var(--space-2xl);
 }
 
-.footer-brand {
+.footer-brand-center {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: var(--space-md);
 }
 
-.footer-brand .brand-text {
-    font-size: 1.5rem;
+.footer-brand-center .brand-text {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 700;
     background: none;
     -webkit-background-clip: unset;
     -webkit-text-fill-color: white;
@@ -1010,48 +1121,49 @@ select.form-input {
     color: white;
 }
 
-.footer-brand p {
+.footer-brand-center p {
     color: rgba(255, 255, 255, 0.6);
-    max-width: 300px;
+    font-size: 1rem;
 }
 
 .footer-logo {
-    height: 40px;
+    height: 50px;
     width: auto;
-    max-width: 150px;
+    max-width: 180px;
     object-fit: contain;
 }
 
-.footer-column h4 {
-    color: white;
-    font-weight: 600;
-    margin-bottom: var(--space-md);
+.footer-links-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-lg) var(--space-2xl);
+    margin-bottom: var(--space-2xl);
+    padding-bottom: var(--space-xl);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.footer-column a {
-    display: block;
+.footer-links-center a {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    margin-bottom: var(--space-sm);
+    font-weight: 500;
     transition: color var(--transition-fast);
 }
 
-.footer-column a:hover {
+.footer-links-center a:hover {
     color: var(--accent-orange);
 }
 
-.footer-social h4 {
-    margin-bottom: var(--space-md);
-}
-
-.social-links {
+.footer-social-center {
     display: flex;
+    justify-content: center;
     gap: var(--space-md);
+    margin-bottom: var(--space-2xl);
 }
 
-.social-links a {
-    width: 40px;
-    height: 40px;
+.footer-social-center a {
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1060,16 +1172,18 @@ select.form-input {
     color: white;
     text-decoration: none;
     transition: all var(--transition-fast);
+    font-size: 1.1rem;
 }
 
-.social-links a:hover {
+.footer-social-center a:hover {
     background: var(--accent-orange);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(251, 191, 36, 0.4);
 }
 
 .footer-bottom {
     text-align: center;
-    padding-top: var(--space-xl);
+    padding-top: var(--space-lg);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.875rem;
@@ -1077,12 +1191,8 @@ select.form-input {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .footer-content {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .footer-brand {
-        grid-column: 1 / -1;
+    .how-it-works-content {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1123,14 +1233,6 @@ select.form-input {
 
     .step-arrow {
         transform: rotate(90deg);
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-social {
-        grid-column: 1;
     }
 }
 
